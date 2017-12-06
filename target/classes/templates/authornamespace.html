@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Author Name Space Page</title>
+</head>
+<body>
+
+<h1>Get List of Authors</h1>
+
+<table>
+    <tr>
+        <th>Author ID</th>
+    <th>Author Name</th>
+
+    </tr>
+
+    <tr th:each="author : ${authornamespace}">
+       <td th:text = ${author.id}>Fake Id</td>
+        <td th:text = ${author.firstName}>Fake Name</td>
+        <td th:text = ${author.lastName}>Fake Name</td>
+    </tr>
+
+
+
+</table>
+
+
+
+</body>
+</html>

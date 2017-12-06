@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ThymeLeaf Book Model</title>
+</head>
+<body>
+<h1>Book Listing</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Publisher</th>
+    </tr>
+    <tr th:each="b : ${booknamespace}">
+        <td th:text="${b.id}">Fake Num</td>
+        <td th:text="${b.title}">Action</td>
+        <td th:text="${b.publisher.name}">Name</td>
+
+    </tr>
+
+</table>
+
+
+
+</body>
+</html>
